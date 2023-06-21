@@ -1,0 +1,61 @@
+:root {
+  --color1: #ba9519;
+  --color2: white;
+  --color3: white;
+}
+.img {
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  padding: 1%;
+  border: 2px solid black;
+  color: var(--color2);
+  height: 100;
+  width: 100;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4%;
+  width: 60%;
+  border: none;
+  background-color: var(--color1);
+  border-collapse: collapse;
+}
+tr {
+  border: solid 2px;
+  color: var(--color3);
+  transition: all 0.2s ease-out;
+}
+
+tr:hover {
+  background-color: #bba866;
+}
+
+td {
+  font-size: x-large;
+  padding: 1.5%;
+  margin-left: 2%;
+}
+
+.but {
+  background-image: url("./more.png");
+  background-color: var(--color1);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 40%;
+  height: 50px;
+  border: 0px;
+  background-position: right;
+  float: right;
+  margin-right: 30%;
+}
+
+.t {
+  width: 8%;
+  margin-left: 12%;
+}

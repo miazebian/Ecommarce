@@ -1,0 +1,116 @@
+.back_btn {
+  transform: rotate(180deg);
+  transition: all 0.2s ease-out;
+}
+.back_btn:hover {
+  transform: scale(1.2) rotate(180deg);
+}
+.back_btn:active {
+  transform: scale(0.9) rotate(180deg);
+}
+
+.front_btn {
+  transition: all 0.2s ease-out;
+}
+.front_btn:hover {
+  transform: scale(1.2);
+}
+.front_btn:active {
+  transform: scale(0.9);
+}
+
+.btn-primary {
+  cursor: pointer;
+  font-size: medium;
+  color: white;
+  background-color: #191919;
+  padding: 0.75rem 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  transition: all 0.2s ease-out;
+  text-decoration: none;
+}
+.btn-primary:hover {
+  background-color: #595959;
+  transform: translateY(-0.25rem);
+  box-shadow: 0 2px 6px 0 black;
+}
+.btn-primary:active {
+  transform: translateY(0.05rem);
+}
+
+.btn-secondary {
+  font-size: medium;
+  color: black;
+  background-color: #ba9519;
+  padding: 0.75rem 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  transition: all 0.2s ease-out;
+}
+.btn-secondary:hover {
+  background-color: #ebcd68;
+  transform: translateY(-0.25rem);
+  box-shadow: 0 2px 6px 0 black;
+}
+.btn-secondary:active {
+  transform: translateY(0.05rem);
+}
+
+.btn-email {
+  text-decoration: none;
+  background-color: #ba9519;
+  padding: 0.2rem 0.3rem;
+  color: #191919;
+  border-radius: 0.25rem;
+  transition: all 0.2s ease-out;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+.btn-email:hover {
+  color: #f2f2f2;
+  padding: 0.35rem 0.45rem;
+  margin-right: 0.8rem;
+  margin-left: 0.8rem;
+}
+
+.radio_div {
+  margin: 0 0.75rem;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label span {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+input[type="radio"] + label span {
+  background-color: #ba9519;
+}
+
+input[type="radio"]:checked + label span {
+  background-color: #f2f2f2;
+}
+
+input[type="radio"] + label span,
+input[type="radio"]:checked + label span {
+  transition: background-color 0.4s linear;
+}
+
+@media only screen and (max-width: 1000px) {
+  .btn-responsive {
+    transition: all 0.2s ease-out;
+    transform: scale(0.8);
+  }
+
+  input[type="radio"] + label span {
+    transform: scale(0.8);
+    transition: all 0.2s ease-out;
+  }
+}

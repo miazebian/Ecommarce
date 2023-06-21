@@ -1,0 +1,107 @@
+.slideshow {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  height: 65vh;
+  width: 100%;
+  overflow: hidden;
+}
+.slideshow_img {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+  transition: all 2s ease-out;
+}
+.slideshow_img_radio {
+  position: absolute;
+  bottom: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slideshow_img_radio_btn {
+  margin: 0 1rem;
+  height: 1rem;
+  width: 1rem;
+}
+.slideshow_img_radio_btn:checked {
+  border: solid 5px #ba9519;
+}
+.slideshow_left {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #434343;
+  width: 10%;
+  height: 100%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+  transition: all 0.2s ease-out;
+}
+.slideshow_left:hover {
+  background-color: #767676;
+}
+.slideshow_left-arrow {
+  position: absolute;
+  top: 15%;
+  left: 22%;
+}
+.slideshow_right {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #434343;
+  width: 10%;
+  height: 100%;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+.slideshow_right:hover {
+  background-color: #767676;
+}
+.slideshow_right-arrow {
+  position: absolute;
+  bottom: 15%;
+  right: 22%;
+  transform: rotateY(180deg);
+}
+
+@media only screen and (max-width: 1000px) {
+  .slideshow_left-arrow {
+    transition: all 0.2s ease-out;
+    transform: scale(0.75);
+    top: 10%;
+    left: 15%;
+  }
+
+  .slideshow_right-arrow {
+    transition: all 0.2s ease-out;
+    transform: scale(0.75) rotateY(180deg);
+    bottom: 10%;
+    right: 15%;
+  }
+
+}
+
+@media only screen and (max-width: 750px) {
+  .slideshow_left-arrow {
+    transition: all 0.2s ease-out;
+    transform: scale(0.6);
+    top: 10%;
+    left: 10%;
+  }
+
+  .slideshow_right-arrow {
+    transition: all 0.2s ease-out;
+    transform: scale(0.6) rotateY(180deg);
+    bottom: 10%;
+    right: 10%;
+  }
+}
+

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" type="x-icon" href="/img/finchLogo.png" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Golden Finch</title>
+    <link rel="stylesheet" href="/styles.css"/>
+
+  </head>
+  <body>
+  <nav class="nav-bar">
+      <div class="nav-bar_left"> 
+        <a href="home.php" class="logo"
+          ><img
+            src="/img/thegoldenfinch-transformed.png"
+            alt="logo"
+            height="110"
+            width="220"
+        /></a>
+      </div>
+      <div class="nav-bar_mid" id="navList">
+        <a href="/products/men.php" class="nav-bar_mid_link">Men</a>
+        <a href="/products/woman.php" class="nav-bar_mid_link">Women</a>
+        <a href="/products/kids.php" class="nav-bar_mid_link">Kids</a>
+        <a href="/aboutUs/aboutUs.html" class="nav-bar_mid_link">About Us</a>
+        <a href="/contactUs/contactUs.php" class="nav-bar_mid_link"
+          >Contact Us</a
+        >
+      </div>
+      <div class="nav-bar_right">
+        <form action="#" method="POST" class="nav-bar_right_search-form">
+          <input
+            type="text"
+            name="search-input"
+            placeholder="Search..."
+            id="search-input"
+            class="nav-bar_right_search-input"
+          />
+          <button class="nav-bar_right_search-btn" type="submit" name="search">
+            <a href='#'>
+            <img class="navIcon" src="/img/search-icon.png" alt="search"/>
+      </a>
+          </button>
+        </form>
+        <div
+          class="right_icons"
+          style="display: flex; justify-content: space-evenly"
+        >
+          <a
+            href="/cart/cart.php"
+            style="padding: 0 0.5rem"
+            class="nav-bar_right_search-btn"
+            ><img class="navIcon" src="/img/shopcart_icon.png" alt="Cart"
+          /></a>
+          <a
+            href="/wishlist/wishlist.php"
+            style="padding: 0 0.5rem"
+            class="nav-bar_right_search-btn"
+            ><img class="navIcon" src="/img/wishlist_icon.png" alt="Cart"
+          /></a>
+          <a
+            href="/settings/setting.html"
+            style="padding: 0 0.5rem"
+            class="nav-bar_right_search-btn"
+            ><img class="navIcon" src="/img/profile_icon.png" alt="Cart"
+          /></a>
+          <div class="collapseIcon">
+            <img
+              src="/img/hamburgerIcon.png"
+              alt="Menu"
+              class="hamburger"
+              id="menu"
+              onclick="showList()"
+            />
+            <img
+              src="/img/closeIconWhite.png"
+              alt="Close"
+              class="closeNav"
+              id="closeMenu"
+              onclick="hideList()"
+            />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <script src="/Abstracts/responsiveNav.js"></script>
+
+    
+    <section class="aboutUs">
+      <div class="aboutUs-up">
+        <h1 class="aTitle">T H E &emsp; G O L D E N &emsp; F I N C H</h1>
+      </div>
+      <div class="aboutUs-down">
+        <h3 class="dTitle">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </h3>
+        <div class="aboutUs-down_text">
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+            aliquid velit, distinctio perspiciatis deserunt voluptas vero alias
+            architecto placeat beatae. Odit voluptatum, molestias eos provident
+            natus aperiam neque minima quo. <br />
+            <br />
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime
+            maiores, enim molestias, distinctio, nobis rerum nesciunt fugit eum
+            magni deserunt inventore pariatur voluptate repellendus quaerat aut
+            amet porro alias ad? <br />
+            <br />
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime
+            maiores, enim molestias, distinctio, nobis rerum nesciunt fugit eum
+            magni deserunt inventore pariatur voluptate repellendus quaerat aut
+            amet porro alias ad?
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

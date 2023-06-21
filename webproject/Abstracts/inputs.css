@@ -1,0 +1,83 @@
+.input-primary {
+  border: solid 2px #191919;
+  color: #191919;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease-out;
+}
+.input-primary::placeholder{
+  color: #191919;
+}
+
+.input-primary-white::-moz-placeholder {
+  color: #eeeeee;
+}
+.input-primary-white:-ms-input-placeholder {
+  color: #eeeeee;
+}
+.input-primary-white::placeholder {
+  color: #eeeeee;
+}
+.input-primary:focus {
+  background-color: #191919;
+  color: #eeeeee;
+}
+.input-primary:focus::-moz-placeholder {
+  color: #eeeeee;
+}
+.input-primary:focus:-ms-input-placeholder {
+  color: #eeeeee;
+}
+.input-primary:focus::placeholder {
+  color: #eeeeee;
+}
+.input-primary-small {
+  height: 2vh;
+  width: 30%;
+}
+.input-primary-med {
+  width: 40%;
+}
+.input-primary-big {
+  width: 75%;
+}
+
+.input-secondary {
+  border: solid 2px #191919;
+  border-radius: 0.5rem;
+  background-color: #eeeeee;
+  color: #191919;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease-out;
+}
+
+.input-secondary::placeholder{
+  color: #191919;
+}
+
+.input-secondary:focus {
+  background-color: #191919;
+  color: #eeeeee;
+}
+.input-secondary:focus::-moz-placeholder {
+  color: #eeeeee;
+}
+.input-secondary:focus:-ms-input-placeholder {
+  color: #eeeeee;
+}
+.input-secondary:focus::placeholder {
+  color: #eeeeee;
+}
+.input-secondary-small {
+  height: 60%;
+  width: 30%;
+}
+.input-secondary-big {
+  width: 30vw;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  
+}

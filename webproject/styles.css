@@ -1,0 +1,43 @@
+@import "/Abstracts/buttons.css";
+@import "/Abstracts/colors.css";
+@import "/Abstracts/inputs.css";
+@import "/Abstracts/layout.css";
+@import "/Abstracts/text.css";
+@import "/Abstracts/filterTab.css";
+@import "/Abstracts/navbar.css";
+@import "/Abstracts/margins.css";
+@import "/aboutUs/aboutUs.css";
+@import "/admin/admin.css";
+@import "/cart/cart.css";
+@import "/checkout/checkout_.css";
+@import "/contactUs/contactUs.css";
+@import "/edit/edit.css";
+@import "/home/footer.css";
+@import "/login/loginstyle.css";
+@import "/home/newsletter.css";
+@import "/payment/payment.css";
+@import "/home/product_card.css";
+@import "/home/products.css";
+@import "/settings/setting.css";
+@import "/home/slideshow.css";
+@import "/wishlist/wishlist.css";
+@import "/productInfo/pInfo.css";
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fefefe;
+}
+
+a {
+  cursor: pointer;
+}
+
+* {
+  font-family: "Merienda", cursive;
+}
+
+.batan {
+  background-color: transparent;
+  border: none;
+}

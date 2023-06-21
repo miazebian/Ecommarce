@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" type="x-icon" href="/img/finchLogo.png" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Golden Finch</title>
+    <link rel="stylesheet" href="/styles.css"/>
+
+  </head>
+  <body>
+  <nav class="nav-bar">
+      <div class="nav-bar_left"> 
+        <a href="home.php" class="logo"
+          ><img
+            src="/img/thegoldenfinch-transformed.png"
+            alt="logo"
+            height="110"
+            width="220"
+        /></a>
+      </div>
+      <div class="nav-bar_mid" id="navList">
+        <a href="/products/men.php" class="nav-bar_mid_link">Men</a>
+        <a href="/products/woman.php" class="nav-bar_mid_link">Women</a>
+        <a href="/products/kids.php" class="nav-bar_mid_link">Kids</a>
+        <a href="/aboutUs/aboutUs.html" class="nav-bar_mid_link">About Us</a>
+        <a href="/contactUs/contactUs.php" class="nav-bar_mid_link"
+          >Contact Us</a
+        >
+      </div>
+      <div class="nav-bar_right">
+        <form action="#" method="POST" class="nav-bar_right_search-form">
+          <input
+            type="text"
+            name="search-input"
+            placeholder="Search..."
+            id="search-input"
+            class="nav-bar_right_search-input"
+          />
+          <button class="nav-bar_right_search-btn" type="submit" name="search">
+            <a href='#'>
+            <img class="navIcon" src="/img/search-icon.png" alt="search"/>
+      </a>
+          </button>
+        </form>
+        <div
+          class="right_icons"
+          style="display: flex; justify-content: space-evenly"
+        >
+          <a
+            href="/cart/cart.php"
+            style="padding: 0 0.5rem"
+            class="nav-bar_right_search-btn"
+            ><img class="navIcon" src="/img/shopcart_icon.png" alt="Cart"
+          /></a>
+          <a
+            href="/wishlist/wishlist.php"
+            style="padding: 0 0.5rem"
+            class="nav-bar_right_search-btn"
+            ><img class="navIcon" src="/img/wishlist_icon.png" alt="Cart"
+          /></a>
+          <a
+            href="/settings/setting.html"
+            style="padding: 0 0.5rem"
+            class="nav-bar_right_search-btn"
+            ><img class="navIcon" src="/img/profile_icon.png" alt="Cart"
+          /></a>
+          <div class="collapseIcon">
+            <img
+              src="/img/hamburgerIcon.png"
+              alt="Menu"
+              class="hamburger"
+              id="menu"
+              onclick="showList()"
+            />
+            <img
+              src="/img/closeIconWhite.png"
+              alt="Close"
+              class="closeNav"
+              id="closeMenu"
+              onclick="hideList()"
+            />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <script src="/Abstracts/responsiveNav.js"></script>
+
+    <div>
+      <img
+        style="background-color: black"
+        class="img"
+        src="/img/profile_icon.png"
+        height="100"
+        width="100"
+      />
+    </div>
+
+    <table>
+      
+      <tr>
+        <td class="t">
+          <a href="/cart/cart.php"
+            ><img src="../img/shopcart_icon.png" height="32" width="32"
+          /></a>
+        </td>
+        <td>Cart</td>
+        <td>
+          <button onclick="" class="but"></button>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="t">
+          <a href="/wishlist/wishlist.php"
+            ><img src="../img/wishlist_icon.png" height="32" width="32"
+          /></a>
+        </td>
+        <td>Wish List</td>
+        <td>
+          <button
+            onclick="location.href='../WishList/Wishlist.php'"
+            class="but"
+          ></button>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="t">
+          <a href="/edit/edit.php"
+            ><img
+              style="margin-left: 12%"
+              src="../img/edit.png"
+              height="32"
+              width="32"
+          /></a>
+        </td>
+        <td>Edit Profile</td>
+        <td>
+          <button
+            onclick="location.href='../edit/edit.php'"
+            class="but"
+          ></button>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="t">
+          <a href="logout.php"
+            ><img
+              style="margin-left: 12%"
+              src="../img/arrow_icon.png"
+              height="32"
+              width="32"
+          /></a>
+        </td>
+        <td>Sign Out</td>
+        <td>
+          
+          <button class="but">
+            <a href="logout.php"
+            ></a>
+          </button>
+        </td>
+      </tr>
+    </table>
+
+    <br />
+    <br />
+    <br />
+  </body>
+  <script src="setting.js"></script>
+  <script src="/Abstracts/responsiveNav.js"></script>
+</html>

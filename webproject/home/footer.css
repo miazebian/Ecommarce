@@ -1,0 +1,10 @@
+.footer {
+  background-color: #434343;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+.footer_section {
+  padding: 0rem 3rem;
+}/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LogIn Page</title>
+    <link rel="stylesheet" href="loginstyle.css" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  </head>
+
+  <body class="loginBody">
+    <form
+    id="login-form"
+    style="
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left: 2%;
+        padding-right: 2%;
+      "
+      class="box"
+      action="#"
+      method="POST"
+    >
+      <h1>welcome back!</h1>
+      <h1 id="log" name="log">login</h1>
+      <h2 id="message" ></h2>
+
+      <input
+        type="text"
+        name="username"
+        required
+        placeholder="Enter username"
+        id="username"
+      />
+
+      <input
+        type="password"
+        placeholder="Enter Password"
+        required
+        name="password"
+        id="password"
+      />
+
+      <button type="submit" class="btn-primary" name="submit">Login</button>
+
+      <p><a href="/signUp/signup.php">Create an account!</a></p>
+
+    </form>
+
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#login-form").on('submit',function(e){
+              console.log('s')
+                e.preventDefault();
+                var username = $("#username").val().trim();
+                var password = $("#password").val().trim();
+                if( username != "" && password != "" ){
+                    $.ajax({
+                        url:'login.php',
+                        type:'post',
+                        data: {
+                            username: username,
+                            password:password
+                        },
+                        success:function(response){
+                            console.log(response);
+                
+                            if(response == 1){
+                                window.location.href = "../home/home.php";
+                            }else if(response == 2){
+                                 window.location.href = "../admin/admin.php";
+                            }
+                            else if(response == 0){
+                               var msg = "Invalid username or password!";
+                                $("#message").html(msg);
+                            }
+              
+                        },
+                        fail:function(response){
+                            console.log(response)
+                        }
+                    });
+                }
+            });
+
+        });
+    </script>
+
+
+  </body>
+</html>
